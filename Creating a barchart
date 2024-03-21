@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+
+# Sample data (ages)
+ages = [21, 25, 30, 35, 40, 45, 50, 55, 60, 65]
+counts = [100, 150, 200, 250, 300, 350, 300, 250, 200, 150]
+
+# Plot
+plt.figure(figsize=(10, 6))
+plt.bar(ages, counts, color='skyblue')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+plt.title('Distribution of Ages')
+plt.xticks(ages)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+
+# Show plot
+plt.show()
